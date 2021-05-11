@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\ejurado\source\repos\DSW1_T5DJ_EL1_EDERCAPCHA\DSW1_T5DJ_EL1_EDERCAPCHA\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2021-05-10T03:30:49.9717090Z;True|2021-05-09T22:23:12.7233342-05:00;True|2021-05-09T22:18:37.0423487-05:00;True|2021-05-09T19:44:43.6800128-05:00;True|2021-05-09T19:35:36.2855818-05:00;</History>
+    <_PublishTargetUrl>C:\Users\ejurado\Documents\GitHub\desarrollo_servicios_web_1\DSW1_T5DJ_EL1_EDERCAPCHA\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2021-05-11T15:42:04.9286405Z;True|2021-05-09T22:30:49.9717090-05:00;True|2021-05-09T22:23:12.7233342-05:00;True|2021-05-09T22:18:37.0423487-05:00;True|2021-05-09T19:44:43.6800128-05:00;True|2021-05-09T19:35:36.2855818-05:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -15,10 +15,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/DSW1_T5DJ_EL1_EDERCAPCHA.dll">
-      <publishTime>05/09/2021 22:18:35</publishTime>
+      <publishTime>05/11/2021 10:42:03</publishTime>
     </File>
     <File Include="bin/DSW1_T5DJ_EL1_EDERCAPCHA.pdb">
-      <publishTime>05/09/2021 22:18:35</publishTime>
+      <publishTime>05/11/2021 10:42:03</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>09/05/2018 16:10:50</publishTime>
@@ -723,13 +723,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/09/2021 16:20:09</publishTime>
     </File>
     <File Include="Views/Pedido/PedidosByYears.cshtml">
-      <publishTime>05/09/2021 22:30:17</publishTime>
+      <publishTime>05/11/2021 10:24:55</publishTime>
+    </File>
+    <File Include="Views/ProductoBI/Registrar.cshtml">
+      <publishTime>05/11/2021 10:41:38</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>05/09/2021 10:56:56</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/09/2021 22:14:53</publishTime>
+      <publishTime>05/11/2021 09:10:20</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>05/09/2021 10:56:56</publishTime>
@@ -738,7 +741,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/09/2021 10:56:56</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/09/2021 19:44:43</publishTime>
+      <publishTime>05/11/2021 10:42:03</publishTime>
     </File>
   </ItemGroup>
 </Project>
