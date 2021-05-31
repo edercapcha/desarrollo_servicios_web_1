@@ -1,0 +1,90 @@
+﻿@model DSW1_T5DJ_EL1_EDERCAPCHA.Models.Servicio
+
+@{
+    ViewBag.Title = "Index";
+    List<DSW1_T5DJ_EL1_EDERCAPCHA.Models.Servicio> list = ViewBag.servicios;
+    String result = ViewBag.result;
+    if (result == null) {
+        result = "";
+    }
+}
+
+<h2>Registrar</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Registro</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Fecha Registro</label>
+            <div class="col-md-10">
+                <input id="fec" type="date" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Servicio</label>
+            <div class="col-md-10">
+                <select class="accordion form-control" id="ser">
+                    <option value=0>Seleccione...</option>
+                    @foreach (var item in list)
+                    {
+                        <option value=@item.idservicio>@item.desservicio</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Dni</label>
+            <div class="col-md-10">
+                <input id="dni" type="text" maxlength="8" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Nombre</label>
+            <div class="col-md-10">
+                <input id="nom" type="text" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Dirección</label>
+            <div class="col-md-10">
+                <input id="dire" type="text" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-6">
+                <button id="limpiar" class="btn btn-default">Limpiar</button>
+                &nbsp;&nbsp;&nbsp;
+                <button id="crear" class="btn btn-primary" onclick="fnRegistrar()">Create</button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <b><p>@result</p></b>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    function fnRegistrar() {
+        var fch = $("#fec").val();
+        var ser = $("#ser option:selected").val();
+        var dni = $("#dni").val();
+        var nom = $("#nom").val();
+        var dir = $("#dire").val();
+        window.location.href = "/Servicio/Index?fch=" + fch + "&dni=" + dni + "&nom=" + nom + "&dir=" + dir + "&ser=" + ser;
+        alert("Registro agregado");
+    };
+</script>
